@@ -1,0 +1,23 @@
+{
+"api_key": "your_secure_api_key",
+  "email_settings": {
+    "smtp_server": "smtp.example.com",
+    "port": 587,
+    "sender_email": "alerts@example.com",
+    "sender_password": "yourpassword",
+    "recipient_groups": {
+      "admin": ["admin1@example.com", "admin2@example.com"],
+      "management": ["manager1@example.com", "manager2@example.com"]
+    }
+  },
+  "data_sources": {
+    "plc_data_path": "C:/sharing-data/plc_logs/",
+    "mes_data_path": "C:/mes_data/",
+    "manual_input_path": "C:/sharing-data/manual_logs/"
+  },
+  "alert_rules": {
+    "temperature_threshold": 100,
+    "pressure_threshold": 50,
+    "time_check_interval": 3600
+  }
+}

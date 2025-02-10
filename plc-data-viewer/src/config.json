@@ -1,0 +1,18 @@
+{
+    "database": {
+        "host": "localhost",
+        "port": 1433,
+        "username": "sa",
+        "password": "your_password",
+        "database_name": "plc_data"
+    },
+    "viewer_settings": {
+        "refresh_interval": 5,
+        "default_plc_id": 1,
+        "enable_logging": true
+    },
+    "log_settings": {
+        "log_file": "viewer.log",
+        "log_level": "INFO"
+    }
+}
