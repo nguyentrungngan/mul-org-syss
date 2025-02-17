@@ -29,36 +29,14 @@
 
 ### **5. Installation Guide**
 #### **Install Required Software**
-1. **Install Node.js & Next.js (Frontend)**
-   ```sh
-   # Install Node.js
-   https://nodejs.org/en/download/
+1. **Install Frontend**
    
-   # Install dependencies
-   cd frontend
-   npm install
+   Use readme_frontend.md at `/org1/winstore-webapp/src/frontend` path
+
+2. **Install Backend**
+
+   Use readme_frontend.md at `/org1/winstore-webapp/src/backend` path
    
-   # Start the frontend
-   npm run build
-   npm start
-   ```
-2. **Install Python & FastAPI (Backend)**
-   ```sh
-   # Install Python
-   https://www.python.org/downloads/
-   
-   # Create a virtual environment
-   python -m venv env
-   
-   # Activate virtual environment
-   env\Scripts\activate
-   
-   # Install dependencies
-   pip install fastapi uvicorn pymysql
-   
-   # Start the backend
-   uvicorn main:app --host 0.0.0.0 --port 8000
-   ```
 3. **Install MySQL Server & Create Database**
    ```sql
    CREATE DATABASE image_metadata;
@@ -82,7 +60,4 @@
 ### **7. Security Enhancements**
 - Enforce **SSL/TLS** for secure communication.
 - Use **strong passwords** and limit access to MySQL.
-
----
-This document provides a comprehensive guide to deploying the system on Windows with all necessary configurations.
 

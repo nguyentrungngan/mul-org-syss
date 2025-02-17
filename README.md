@@ -18,18 +18,16 @@ This repository serves as a reference for the development, design, and operation
 📂 org-1/
 │── 📂 WinStore-webapp/
 │   │── 📂 docs/
-│   │──────────overview.md            
-│   │──────────requirements.md        
-│   │──────────solution.md  
-│   │──────────workflow.md        
+│   │──────────overview.md                   
+│   │──────────solution.md          
 │   │──────────architecture.md     
 │   │──────────database.md         
-│   │──────────api-specification.md         
-│   │──────────deployment.md       
-│   │──────────security_guidelines.md        
+│   │──────────api.md         
+│   │──────────deployment.md               
 │   │──────────troubleshooting.md                             
 │   │── 📂 src/
-│   │── 📂 tests/
+│   │────── 📂 backend/
+│   │────── 📂 frontend/
 📂 org-2/
 │
 📂 org-3/

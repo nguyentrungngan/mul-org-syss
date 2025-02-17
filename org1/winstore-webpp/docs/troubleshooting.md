@@ -1,83 +1,73 @@
-# Troubleshooting Guide 
+# Troubleshooting Guide
 
-## Common Issues & Solutions
+## Authentication Issues
+### Issue: Invalid Credentials
+**Symptoms:**
+- Login request returns HTTP 401 Unauthorized.
+- Response message: "Invalid username or password."
 
-### 1. Authentication Failure
-**Issue:** Login request returns `401 Unauthorized`.
-**Possible Causes:**
-- Incorrect username or password.
-- Expired or invalid authentication token.
+**Solutions:**
+1. Verify that the username and password are correct.
+2. Ensure that the credentials are being sent in the correct JSON format.
+3. Check if the user account is locked or inactive.
 
-**Solution:**
-- Verify username and password.
-- Ensure the token is included in the `Authorization` header.
-- If expired, request a new token using `/api/auth/login`.
+### Issue: Token Expired
+**Symptoms:**
+- API returns HTTP 403 Forbidden after successful login.
+- Response message: "Token expired. Please re-authenticate."
 
----
+**Solutions:**
+1. Obtain a new token by logging in again.
+2. Ensure the token is included in the Authorization header for each request.
 
-### 2. User Creation Fails
-**Issue:** `POST /api/users` returns `400 Bad Request`.
-**Possible Causes:**
-- Username already exists.
-- Invalid role value provided.
+## Display Store Issues
+### Issue: No Data Returned
+**Symptoms:**
+- The `/displaystore` endpoint returns an empty array.
 
-**Solution:**
-- Ensure the username is unique.
-- Use a valid role (`admin`, `sales`, `viewer`).
+**Solutions:**
+1. Ensure that display store data exists in the database.
+2. Check user role permissions to confirm access to the data.
+3. Verify API authentication is correctly configured.
 
----
+## Display Approval Issues
+### Issue: Approval Not Updating
+**Symptoms:**
+- Sending a POST request to `/displayapproval` does not change approval status.
 
-### 3. Store Creation Issues
-**Issue:** `POST /api/stores` returns `400 Bad Request`.
-**Possible Causes:**
-- Missing required fields (`store_name`, `location`).
+**Solutions:**
+1. Verify the `store_id` and `display_id` are correct.
+2. Ensure the approver has the necessary permissions.
+3. Confirm that the request body follows the required JSON format.
 
-**Solution:**
-- Provide all required fields in the request body.
+## Image Upload Issues
+### Issue: Image Upload Fails
+**Symptoms:**
+- The `/displayupload` endpoint returns an error.
+- Response message: "Upload failed."
 
----
+**Solutions:**
+1. Ensure `display_id` exists and is valid.
+2. Check that `ftp_path` is correctly formatted and accessible.
+3. Verify the file size and format meet the requirements.
+4. Ensure the API rate limit (10 requests per minute per IP) is not exceeded.
 
-### 4. Display Session Not Found
-**Issue:** `GET /api/displays/{id}` returns `404 Not Found`.
-**Possible Causes:**
-- Display session does not exist.
+## General API Issues
+### Issue: Rate Limit Exceeded
+**Symptoms:**
+- API returns HTTP 429 Too Many Requests.
 
-**Solution:**
-- Verify the `display_id` is correct and exists in the database.
+**Solutions:**
+1. Reduce the frequency of requests.
+2. Implement exponential backoff for retry logic.
+3. Contact support if higher request limits are required.
 
----
+## Security Issues
+### Issue: Unauthorized Access
+**Symptoms:**
+- API returns HTTP 403 Forbidden.
 
-### 5. Image Upload Fails
-**Issue:** `POST /api/images` returns `400 Bad Request`.
-**Possible Causes:**
-- Invalid `display_id` provided.
-- FTP server connection issue.
-
-**Solution:**
-- Ensure the `display_id` exists in the `displays` table.
-- Verify the FTP server is accessible and correctly configured.
-
----
-
-### 6. Sync Logs Not Updating
-**Issue:** `GET /api/sync-logs` does not return updated sync status.
-**Possible Causes:**
-- Sync job failed or has not been triggered.
-
-**Solution:**
-- Check sync job logs for errors.
-- Manually trigger a sync if needed.
-
----
-
-## Debugging Tips
-- **Check API Logs:** Ensure API services are running and logs do not show errors.
-- **Validate Database Entries:** Use SQL queries to confirm expected records exist.
-- **Verify Network Connectivity:** Ensure the database and FTP server are reachable.
-
-## Contact Support
-If issues persist, gather logs and contact the support team with:
-- Request payload and response.
-- Relevant log entries.
-- Steps to reproduce the issue.
-
+**Solutions:**
+1. Ensure the correct authentication token is provided.
+2. Verify that the user has the necessary role permissions.
+3. Check for potential token expiration and renew if necessary.
