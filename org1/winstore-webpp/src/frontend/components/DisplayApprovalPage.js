@@ -10,6 +10,11 @@ const DisplayApprovalPage = ({ token, storeId, displayId, approver }) => {
       const result = await approveDisplay(token, storeId, displayId, approver);
       console.log('Approval successful:', result);
       setApprovalStatus(true);
+      //Do something
+
+
+        
+      ////////////////////
     } catch (err) {
       setError('Approval failed!');
       console.error('Error approving display:', err);

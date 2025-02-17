@@ -14,6 +14,11 @@ const UploadImagePage = ({ token, displayId }) => {
       try {
         const result = await uploadImage(token, displayId, image.id, ftpPath, 'user123');
         console.log('Image uploaded successfully:', result);
+        //Do something
+
+
+        
+        ////////////////////
       } catch (err) {
         console.error('Error uploading image:', err);
       }

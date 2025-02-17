@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { login } from './app';
+import WinStoreService from './services/winstoreService';
+
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
     try {
       const result = await login(username, password);
       console.log('Login successful:', result);
-      // Chuyển hướng hoặc hiển thị thông báo thành công
+      // Direct to DisplayStoresPage
+      navigate({WinStoreService.DISPLAY_STORE_URL});
     } catch (err) {
       setError('Login failed!');
     }
