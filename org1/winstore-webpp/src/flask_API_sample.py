@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_jwt_extended import JWTManager, create_access_token
 
-# Import cấu hình
+# Import config info
 from config_sample import Config
 
 # Initialize app
