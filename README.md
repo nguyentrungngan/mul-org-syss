@@ -8,7 +8,7 @@ This repository serves as a reference for the development, design, and operation
 -The data and documentation are **simulated** based on real-world experience,
 **does not contain confidential or sensitive information**.
 - The repository separates documentation by company and application, helping to maintain transparency.
-- Each application includes necessary documents such as **overview, requirements, solution, workflow, architecture, security_guidelines, database, api-specification, deployment, troubleshooting.**
+- Each application includes necessary documents such as **overview, solution, architecture, database, api, deployment, troubleshooting.**
 
 ---
 
@@ -43,9 +43,7 @@ This repository serves as a reference for the development, design, and operation
 
 ### **Business Analysis & Solution Design**
 - `overview.md`: Description of purpose, scope, and target audience.
-- `requirements.md`: Define functional and non-functional requirements.
 - `solution.md`: Model system and technologies used.
-- `workflow.md`: Detail how business operates.
 ---
 
 ### **System Design & Deployment**
@@ -56,9 +54,7 @@ This repository serves as a reference for the development, design, and operation
 ---
 
 ### **Security & Operations**
-- `security_guidelines.md`: Ensure security best practices for applications.
 - `troubleshooting.md`: Detailed troubleshooting guide.
-
 
 ## 4. Usage  
 1. **Explore company applications**:  
@@ -66,8 +62,7 @@ This repository serves as a reference for the development, design, and operation
 2. **Browse an application’s documentation**:  
    - Inside each application (`org-X/app-Y/`), go to the `docs/` folder for structured documentation.  
 3. **Check source code & tests**:  
-   - The `src/` folder contains application source code.  
-   - The `tests/` folder includes test cases and validation scripts.  
+   - The `src/` folder contains application source code.   
   
 
 
