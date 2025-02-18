@@ -13,8 +13,3 @@
 3. Images are stored on the internal FTP server
 4. Metadata (sequence, FTP path, upload time, uploader ID, display ID) is stored in MySQL
 5. API sends metadata to the ERP system for synchronization
-
-## Scalability Considerations
-- Use a microservices architecture for easier scalability
-- Store image data separately on an internal FTP server to reduce database load
-- Ensure API efficiency to handle synchronization with the ERP system

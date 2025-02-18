@@ -19,8 +19,7 @@ This repository serves as a reference for the development, design, and operation
 │── 📂 WinStore-webapp/
 │   │── 📂 docs/
 │   │──────────overview.md                   
-│   │──────────solution.md          
-│   │──────────architecture.md     
+│   │──────────solution.md           
 │   │──────────database.md         
 │   │──────────api.md         
 │   │──────────deployment.md               

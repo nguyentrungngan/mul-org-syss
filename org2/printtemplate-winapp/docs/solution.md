@@ -17,9 +17,3 @@
 7. If changes are needed, the manager must revoke approval before editing  
 8. Approved templates can be printed  
 9. Weekly reports are generated for audit tracking  
-
-## Scalability Considerations  
-- Use **modular service layers** to separate business logic and database operations  
-- Ensure **database indexing** for efficient template retrieval  
-- Implement **role-based access control (RBAC)** for secure approval workflows  
-- Support **API-based integration** with ERP for future expansion  
