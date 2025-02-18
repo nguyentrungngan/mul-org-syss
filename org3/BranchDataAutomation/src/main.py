@@ -10,9 +10,6 @@ from modules.powerbi_refresh import PowerBIRefresh
 from modules.email_notifications import EmailNotifications
 from modules.vpn_connection import VPNConnection
 
-# Load environment variables
-load_dotenv()
-
 def job():
     try:
         vpn = VPNConnection()

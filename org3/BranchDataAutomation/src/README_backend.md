@@ -1,7 +1,7 @@
-# Modular Python Backend
+# BranchDataAutomation Backend
 
 ## Purpose
-This project provides a modular backend system designed for automated data extraction, transformation, and integration with Power BI. The system is structured for maintainability and scalability, utilizing environment variables for easy configuration.
+This backend designed for automated data extraction, transformation, and integration with Power BI. The system is structured for maintainability and scalability, utilizing environment variables for easy configuration.
 
 ## Key Features
 

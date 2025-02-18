@@ -17,12 +17,9 @@
 - Place the Python script in a dedicated folder (e.g., `C:\Automation\DataSync\`).
 - Update script configurations (database details, SFTP credentials, Power BI API keys).
 
-### 2. Configure Windows Task Scheduler
-- Open **Task Scheduler** and create a new task.
-- Set it to run every **15 minutes**.
-- Configure the action to execute:
+### 2. Configure automation machine
   ```bash
-  python C:\Automation\DataSync\backend.py
+  python C:\Automation\DataSync\main.py
   ```
 - Refer to org3/BranchDataAutomation/src/readme_backend.md
 
