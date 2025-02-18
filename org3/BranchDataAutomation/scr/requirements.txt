@@ -1,0 +1,6 @@
+schedule
+python-dotenv
+pyodbc
+paramiko
+requests
+smtplib
