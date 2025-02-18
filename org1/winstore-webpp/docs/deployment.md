@@ -35,7 +35,7 @@
 
 2. **Install Backend**
 
-   Use readme_frontend.md at `/org1/winstore-webapp/src/backend` path
+   Use readme_backend.md at `/org1/winstore-webapp/src/backend` path
    
 3. **Install MySQL Server & Create Database**
    ```sql
