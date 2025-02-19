@@ -1,14 +1,12 @@
-# mul-org-syss
+# mul-org-syss/org-3
 
 ## 1. Introduction
-This repository serves as a reference for the development, design, and operation of internal systems while showcasing expertise in IT System Development.
+This system serves as a reference for the development, design, and operation of internal systems while showcasing expertise in IT System Development.
 ---
 
 ### **Important notes**
 -The data and documentation are **simulated** based on real-world experience,
 **does not contain confidential or sensitive information**.
-- The repository separates documentation by company and application, helping to maintain transparency.
-- Each application includes necessary documents such as **overview, solution, architecture, database, api, deployment, troubleshooting.**
 
 ---
 
@@ -16,21 +14,18 @@ This repository serves as a reference for the development, design, and operation
 
 ```
 📂 org-1/
-│── 📂 WinStore-webapp/
-│   │── 📂 docs/
+│ 
+📂 org-2/
+│   
+📂 org-3/
+│── 📂 docs/
 │   │──────────overview.md                   
-│   │──────────solution.md           
-│   │──────────database.md         
-│   │──────────api.md         
+│   │──────────solution.md                  
 │   │──────────deployment.md               
 │   │──────────troubleshooting.md                             
 │   │── 📂 src/
 │   │────── 📂 backend/
-│   │────── 📂 frontend/
-📂 org-2/
-│
-📂 org-3/
-│
+|   |📄 README.md
 📂 org-4/
 │
 📄 README.md
@@ -46,9 +41,6 @@ This repository serves as a reference for the development, design, and operation
 ---
 
 ### **System Design & Deployment**
-- `architecture.md`: Select architecture for application development.
-- `database.md`: Design database structure.
-- `api.md`: Define APIs.
 - `deployment.md`: Deployment process to production.
 ---
 

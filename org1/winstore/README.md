@@ -1,14 +1,12 @@
 # mul-org-syss
 
 ## 1. Introduction
-This repository serves as a reference for the development, design, and operation of internal systems while showcasing expertise in IT System Development.
+This system serves as a reference for the development, design, and operation of internal systems while showcasing expertise in IT System Development.
 ---
 
 ### **Important notes**
 -The data and documentation are **simulated** based on real-world experience,
 **does not contain confidential or sensitive information**.
-- The repository separates documentation by company and application, helping to maintain transparency.
-- Each application includes necessary documents such as **overview, solution, architecture, database, api, deployment, troubleshooting.**
 
 ---
 
@@ -46,7 +44,6 @@ This repository serves as a reference for the development, design, and operation
 ---
 
 ### **System Design & Deployment**
-- `architecture.md`: Select architecture for application development.
 - `database.md`: Design database structure.
 - `api.md`: Define APIs.
 - `deployment.md`: Deployment process to production.
